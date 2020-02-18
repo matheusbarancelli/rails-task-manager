@@ -1,0 +1,10 @@
+<h1>Title: <%= @task.title %></h1>
+
+
+<p>Details: <%= @task.details %></p>
+<p><%= link_to "back to your fox hole", tasks_path %></p>
+
+<p><%= link_to 'Edit', edit_tasks_path(@task) %></p>
+
+<p><%= link_to 'Remove the task', tasks_path, method: :delete %></p>
+
